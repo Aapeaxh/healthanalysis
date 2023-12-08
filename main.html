@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health Data Analysis</title>
+<link rel="shortcut icon" href="icon.ico"/>
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+
+
+</head>
+<body>
+    <!-- Title Section -->
+
+  <div class="header">
+    <img src="images/profile.jpg" id="profilePic" alt="This is a photo of myself.">
+    <h2 > My Health Data</h2>
+
+    <p class="subtitle"><em>Personal Blood Test Record</em></p>
+    <p class="link">
+      <a href="about.html">About this site</a>
+      </p>
+      <p class="link">
+        <a href="info.html">Data Explain</a>
+        </p>
+  </div>
+
+
+    <!-- Chart Section -->
+  <div class="form-container">
+
+  <form id="healthDataForm" onsubmit="return false;">
+    <input type="number" id="CEA" placeholder="CEA" required>
+    <input type="number" id="CA125" placeholder="CA-125" required>
+    <input type="number" id="AFP" placeholder="AFP" required>
+    <input type="number" id="CA153" placeholder="CA15-3" required>
+    <input type="number" id="CA199" placeholder="CA19-9" required>
+    <input type="text" id="examDate" placeholder="YYYYMMDD" required>
+
+    <button type="button" id="submitData">Submit Data</button>
+   
+    <button type="button" id="clearData">Clear Data</button> 
+  </form>
+</div>
+
+<div class="chart-container">
+    <canvas id="healthChart"></canvas> 
+</div>
+
+    <!-- Memo Section -->
+    
+<input type="text" class="input-text" id="memoDate" placeholder="YYYYMMDD" required>
+<textarea id="memoText" placeholder="Add your memo for this data..."></textarea>
+<button type="button" class="save-btn" id="saveMemo">Save Memo</button>
+
+<div id="pastMemos">
+  <input type="text" id="searchMemoDate" placeholder="YYYYMMDD">
+  <button type="button" id="searchMemo">Search Memo</button>
+  <div id="memoList"></div>
+</div>
+
+<div id="memoDisplaySection">
+    <h3>Past Memos</h3>
+    <div id="memosList"></div>
+  </div>
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+body{
+    background-image: url('images/about_bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    margin: 0;
+   padding-top: 50px; 
+}
+
+
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+    justify-content: space-around;
+    display:flex;
+
+}
+
+.float-child {
+    height: 480px;
+    padding: 10px;
+    padding-top: 80px;
+    flex:1;
+    }
+    
+#largeprofile {
+    box-shadow: #b3b2b2;
+    }
+    
+.float-son {
+    padding: 10px;
+    flex:2;
+    height:600px; 
+    margin:100px;
+}  
+
+p::first-line {
+    font-family: 'Gill Sans';
+  }
+  
+  button:focus {
+    font:5px;
+}
+
+.sub-title{
+    line-height: 2.0; 
+    font-size:20px;
+}
+
+#largeprofile{
+    height:500px; 
+    margin:80px;
+}
+
+.email{
+    line-height: 2.0; 
+    font-size:20px;
+}
+
+.footer{
+    height:auto; 
+    background-color:#96c0ec;
+    text-align: center;
+}
+
+.footer .input-text{
+    color:white; 
+    padding:20px; 
+    margin:0; 
+    text-align:center;
+}
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #3289f5; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: 1000;
+    height: 50px; 
+}
+
+
+.navbar-center {
+    flex: 1;
+}
+
+
+.navbar a {
+    display: inline-block;
+    color: #fafbfc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 10px; 
+}
+
+
+.navbar-right {
+    position: absolute;
+    right: 0;
+}
+
+.navbar a:hover {
+    background-color: #8dd8f1;
+    color: rgb(72, 96, 152);
+}
+
+.float-son p::before {
+    content: '“'; /* Opening quote */
+    color: #66bdff; /* Choose a color that fits your design */
+    font-size: 200%;
+    margin-right: 5px;
+}
+
+.float-son p::after {
+    content: '”'; /* Closing quote */
+    color: #66bdff; /* Same color as the opening quote for consistency */
+    font-size: 200%;
+    margin-left: 5px;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ecd475;
+    transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+h1::first-letter, h2::first-letter {
+    font-size: 200%;
+    color: #3289f5;
+}
+
+.float-son p.sub-title::before {
+    content: '“';
+    color: #ff6699;
+    font-size: 200%;
+    margin-right: 5px;
+}
+
+.float-son p.sub-title::after {
+    content: '”';
+    color: #ff6699;
+    font-size: 200%;
+    margin-left: 5px;
+}
+
+.float-son p.sub-title.no-quotes::before,
+.float-son p.sub-title.no-quotes::after {
+    content: normal;
+}

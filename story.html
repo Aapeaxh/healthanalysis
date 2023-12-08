@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Story</title>
+    <link rel="stylesheet" type="text/css" href="css/story.css">
+    <link rel="shortcut icon" href="icon.ico"/>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-center">
+            <a href="main.html">Home</a>
+            <a href="info.html">Info</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    
+        <div class="navbar-right">
+            <a href="story.html">Story</a>
+        </div>
+     </div>
+   
+     
+    <div id="container">
+        <h2>Post your Story</h2>
+        <div id="form-section">
+            <form id="post-form">
+                <input type="text" id="post-title" placeholder="Title" required><br>
+                <textarea id="post-content" placeholder="Content" required></textarea><br>
+                <input type="file" id="post-image" accept="image/*"><br>
+                <button type="submit">Submit Post</button>
+            </form>
+        </div>
+        <div id="posts-section">
+        </div>
+    </div>
+    <script src="js/story.js"></script>
+</body>
+</html>

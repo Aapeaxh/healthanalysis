@@ -1,0 +1,122 @@
+body {
+    background-image: url('images/storybg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+   padding-top: 50px; 
+    font-family: Arial, sans-serif;
+    
+}
+
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    padding:50px;
+    padding-top: 50px;
+}
+
+#form-section {
+    width: 40%;
+    padding: 20px;
+}
+
+#posts-section {
+    width: 58%;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+}
+
+#post-content {
+    height: 100px;
+    resize: vertical;
+}
+
+.post-image {
+    width: 180px;
+    height: 100px;
+    object-fit: cover; 
+}
+
+
+h2{
+    color:#522c04;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #fabd4c; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: 1000;
+    height: 50px; 
+}
+
+
+.navbar-center {
+    flex: 1;
+}
+
+
+.navbar a {
+    display: inline-block;
+    color: #fafbfc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 10px; 
+}
+
+
+.navbar-right {
+    position: absolute;
+    right: 0;
+}
+
+.navbar a:hover {
+    background-color: #f3d3b7;
+    color: rgb(244, 154, 129);
+}
+
+button {
+    margin-top: 10px;
+    background-color: #9a4f03; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Style for delete button */
+.delete-btn {
+    margin-top: 10px;
+    background-color: #6d5603; 
+    color: white;
+    border: none;
+    padding: 5px 10px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px; 
+    cursor: pointer; 
+}
+
+
+.delete-btn:hover {
+    background-color: #73440e; 
+}

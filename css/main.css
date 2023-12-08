@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('images/bg.png');
+    background-repeat: repeat;
+  }
+.header{
+    text-align: center;
+}
+  .form-container {
+    margin-bottom: 30px;
+  }
+
+.form-container .input-text {
+    background-color: #f0f0f0;
+}
+
+  input[type=number] {
+    margin: 5px;
+    padding: 5px;
+  }
+
+  button {
+    padding: 10px;
+    color: white;
+    background-color: rgb(81, 5, 46);
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: darkblue;
+  }
+
+#profilePic{
+    height:150px;
+    width:200px; 
+    border-radius: 50%; 
+    border: 5px solid #a1c1a8;
+}
+
+h2::first-line{
+font-size:45px; 
+color:rgb(36, 36, 36); 
+margin:10px;
+}
+
+.subtitle{
+    font-size:25px; 
+    color: rgb(77, 92, 89);
+}
+.link{
+    font-size: 15px; 
+    color:#0d4777;
+}
+
+.chart-container{
+    position: relative; 
+    height:40vh; 
+    width:80vw
+}
+
+.submit-btn, .save-btn, .search-btn {
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+}
+#pastMemos{
+
+    font-style: italic;
+}
+  #memoDate {
+    font: 3px;  
+    color:black;
+}
+  #saveMemo {
+font: 3px;
+color: rgb(246, 247, 228);
+background-color: chocolate;  
+}
+
+#deleteMemo {
+    font: 3px;
+    color: rgb(246, 247, 228);
+    background-color: rgb(57, 30, 210);  
+    }
+
+ 

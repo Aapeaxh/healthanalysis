@@ -1,0 +1,254 @@
+body {
+    background-color: #fff;
+    color: #222222;
+    margin: 0;
+   padding-top: 50px; 
+    font-family: Arial, sans-serif;
+    
+}
+
+
+#contact, #portfolio {
+    padding-left: 20px;
+}
+
+h2{
+    color:rgb(25, 48, 2);
+}
+.navbar {
+    overflow: hidden;
+    background-color: #f7ecce; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    z-index: 1000;
+    height: 50px; 
+}
+
+
+.navbar-center {
+    flex: 1;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 10px; 
+}
+
+
+.navbar-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.theme-toggle-container {
+    position: fixed; 
+    top: 60px; 
+    right: 20px; 
+    z-index: 1001;
+}
+
+#themeToggle {
+    padding: 5px 10px;
+    background-color: #fdf8ec;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#themeToggle:hover {
+    background-color: #ddd;
+}
+
+
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: rgb(244, 227, 185);
+}
+
+
+
+.navbar a, h2, button {
+    color: #333;
+}
+
+h1::before {
+    content: url(images/contact-mail.png);
+    padding-right: 10px;
+}
+
+
+input:hover {
+    background-color: #f0f0f0;
+}
+
+input:focus {
+    border-color: #a0a0a0;
+}
+
+a:link {
+    color: #a8a9f7;
+}
+
+a:visited {
+    color: #f89410;
+}
+
+.contact-info p {
+    font-size: 14px;
+}
+
+form input {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+form label {
+    display: block;
+    margin-top: 20px;
+}
+
+label + label {
+    margin-top: 15px;
+}
+
+label + input {
+    background-color: #e8e8e8;
+}
+
+input + button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ff6699;
+    border: none;
+    color: white;
+}
+
+.navbar-center a {
+    font-weight: bold;
+}
+
+.navbar-right a {
+    font-style: italic;
+}
+
+#contact form {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#contact form input {
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#portfolio button {
+    background-color: #e5880f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#portfolio #projectsContainer {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#contact h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#contactForm textarea {
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+
+#contactForm button {
+    background-color: #e7620f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar-center a:hover {
+    color: #fe8737;
+}
+
+.navbar-right a:hover {
+    color: #ff6600;
+}
+
+input[type="text"] + input[type="email"] {
+    background-color: #f2f2f2;
+}
+
+input[type="email"] + textarea {
+    background-color: #f2f2f2;
+}
+
+textarea + button {
+    margin-top: 20px;
+}
+
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme #contact h2 {
+    color: #fff;
+}
+body.dark-theme .navbar, body.dark-theme #contact form, body.dark-theme #portfolio #projectsContainer {
+    background-color: #555;
+}
+
+body.dark-theme .navbar a, body.dark-theme button {
+    color: #f96a1e;
+}
+body.dark-theme h2{
+    color:#e8e8e8;
+}
+
+body.dark-theme input, body.dark-theme textarea {
+    background-color: #777;
+    color: #f6af2c;
+    border-color: #999;
+}
+
+body.dark-theme input:hover, body.dark-theme textarea:hover {
+    background-color: #888;
+}
+
+body.dark-theme .project {
+    border-color: #999;
+}
+
+body.dark-theme #contact form input::placeholder,
+body.dark-theme #contact form label {
+    color: #fff;
+}
+
+body.dark-theme #contact form label[for="message"] {
+    color: #fff;
+}
+

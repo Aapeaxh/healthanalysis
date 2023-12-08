@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Menu</title>
+    <link rel="shortcut icon" href="icon.ico"/>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+
+
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-center">
+        <a href="main.html">Home</a>
+        <a href="info.html">Info</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Right aligned link -->
+    <div class="navbar-right">
+        <a href="story.html">Story</a>
+    </div> 
+ </div>
+
+ <div class="theme-toggle-container">
+    <button id="themeToggle">Mode</button>
+  </div>
+
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required><br>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+
+    <div id="portfolio">
+            <h2>Previous Projects can be seen below</h2>
+        <button id="loadProjects">Show Projects</button>
+        <div id="projectsContainer" style="display:none;">
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/contact.js"></script> 
+    <script type="module" src="js/themeToggle.js"></script>
+
+
+</body>
+</html>
+
+
